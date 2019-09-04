@@ -37,7 +37,6 @@ def fill():
         prew_month_days = calendar.monthrange(year, month - 1)[1]
     week_day = calendar.monthrange(year, month)[0]
     for n in range(month_days):
-        print(n)
         days[n + week_day]['text'] = n + 1
         days[n + week_day]['fg'] = 'black'
         if year == now.year and month == now.month and n == now.day:
